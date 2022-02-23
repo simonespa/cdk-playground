@@ -1,22 +1,32 @@
 {
   "name": "library",
   "version": "0.1.0",
-  "main": "lib/index.ts",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simonespa/cdk-playground.git"
   },
-  "keywords": ["aws", "app", "library", "typescript", "cdk"],
+  "keywords": [
+    "aws",
+    "app",
+    "library",
+    "typescript",
+    "cdk"
+  ],
   "author": {
-    "name" : "Simone Spaccarotella",
-    "email" : "spa.simone@gmail.com",
-    "url" : "https://www.linkedin.com/in/simonespaccarotella"
+    "name": "Simone Spaccarotella",
+    "email": "spa.simone@gmail.com",
+    "url": "https://www.linkedin.com/in/simonespaccarotella"
   },
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/simonespa/cdk-playground/issues"
   },
   "homepage": "https://github.com/simonespa/cdk-playground#readme",
+  "scripts": {
+    "dev": "tsc --watch",
+    "test": "jest"
+  },
   "peerDependencies": {
     "aws-cdk-lib": "^2",
     "constructs": "^10"

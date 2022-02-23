@@ -16,3 +16,7 @@
 //     VisibilityTimeout: 300
 //   });
 // });
+
+test('Example', () => {
+  expect('a').toBe('a');
+});

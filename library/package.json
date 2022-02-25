@@ -1,7 +1,9 @@
 {
   "name": "library",
   "version": "0.1.0",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simonespa/cdk-playground.git"
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/simonespa/cdk-playground#readme",
   "scripts": {
+    "build": "tsc",
     "dev": "tsc --watch",
     "test": "jest"
   },

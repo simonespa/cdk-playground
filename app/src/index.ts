@@ -2,7 +2,7 @@
 import 'source-map-support/register';
 import { App } from 'aws-cdk-lib';
 import StorageStack from './StorageStack';
-import { AnotherStorageStack, RecordSetGroup} from 'library';
+import { AnotherStorageStack, RecordSetGroup } from 'library';
 
 const app = new App();
 
@@ -13,7 +13,7 @@ new StorageStack(app, 'StorageStack', {
 
 new AnotherStorageStack(app, 'AnotherStorageStack', {
   stackName: 'dev-another-storage-stack',
-  description: 'Another storage stack'
+  description: 'Another storage stack',
 });
 
 new RecordSetGroup(app, 'RecordSetGroup', {
